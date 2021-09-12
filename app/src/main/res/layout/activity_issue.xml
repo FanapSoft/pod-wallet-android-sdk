@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.invoice.IssueInvoiceActivity">
+
+
+  <Button
+    android:id="@+id/indirectBuyCredit"
+    style="@style/buttonStyle"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/button_drawable"
+    android:fontFamily="@font/iy_regular"
+    android:text="پرداخت"
+    android:textColor="@color/white"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/guideline"
+    app:layout_constraintHorizontal_bias="0.572"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/count"
+    app:layout_constraintVertical_bias="0.134" />
+
+  <EditText
+      android:id="@+id/price"
+      android:layout_width="118dp"
+      android:layout_height="41dp"
+      android:layout_marginTop="140dp"
+      android:fontFamily="@font/iy_regular"
+      android:gravity="right"
+      android:hint="مبلغ"
+      android:textSize="@dimen/public_text_size"
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintHorizontal_bias="0.912"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/desc"
+      android:layout_width="287dp"
+      android:layout_height="41dp"
+      android:layout_marginTop="36dp"
+      android:fontFamily="@font/iy_regular"
+      android:gravity="right"
+      android:hint="توضیحات"
+      android:textSize="@dimen/public_text_size"
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/price" />
+
+  <EditText
+      android:id="@+id/count"
+      android:layout_width="107dp"
+      android:layout_height="39dp"
+      android:layout_marginTop="32dp"
+      android:fontFamily="@font/iy_regular"
+      android:gravity="right"
+      android:hint="تعداد"
+      android:textSize="@dimen/public_text_size"
+      app:layout_constraintEnd_toStartOf="@+id/guideline"
+      app:layout_constraintHorizontal_bias="0.916"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/desc" />
+
+  <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_begin="326dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
